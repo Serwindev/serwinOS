@@ -5,8 +5,18 @@ function setTime () {
     timeText.innerText = currentTime;
 }
 
+var aboutWindow = document.getElementById("about");
+var infoWindow = document.getElementById("info");
+var notesWindow = document.getElementById("notes");
+var paidWindow = document.getElementById("paid");
+var dontWindow = document.getElementById("dont");
+
 setInterval(setTime, 1000);
-setDrag(document.getElementById("about"));
+setDrag(aboutWindow);
+setDrag(infoWindow);
+setDrag(notesWindow);
+setDrag(paidWindow);
+
 
 function setDrag(element) {
     var iniX = 0;
@@ -53,3 +63,86 @@ function setDrag(element) {
 
 }
 
+var aboutClose = document.querySelector("#close");
+var aboutApp = document.querySelector(".app-1");
+
+var infoClose = document.querySelector("#close-i");
+var infoApp = document.querySelector(".app-2");
+
+var notesClose = document.querySelector("#close-n");
+var notesApp = document.querySelector(".app-3");
+
+var paidClose = document.querySelector("#close-p");
+var paidApp = document.querySelector(".icon-n");
+
+var dontClose = document.querySelector("#close-d");
+var dontApp = document.querySelector(".icon-n1");
+
+function openWindow(element) {
+    element.style.display = "block";
+}
+
+function closeWindow(element) {
+    element.style.display = "none";
+}
+
+aboutClose.addEventListener("click", function() {
+    closeWindow(aboutWindow);
+});
+
+aboutApp.addEventListener("click", function() {
+    openWindow(aboutWindow);
+});
+
+infoClose.addEventListener("click", function() {
+    closeWindow(infoWindow);
+});
+
+infoApp.addEventListener("click", function() {
+    openWindow(infoWindow);
+});
+
+notesClose.addEventListener("click", function() {
+    closeWindow(notesWindow);
+});
+
+notesApp.addEventListener("click", function() {
+    openWindow(notesWindow);
+});
+
+paidClose.addEventListener("click", function() {
+    closeWindow(paidWindow);
+});
+
+paidApp.addEventListener("click", function() {
+    openWindow(paidWindow);
+});
+
+dontClose.addEventListener("click", function() {
+    closeWindow(dontWindow);
+});
+
+dontApp.addEventListener("click", function() {
+    openWindow(dontWindow);
+});
+
+var linkE = document.querySelector(".link");
+var text = document.querySelector(".sorry");
+var rickRolled = false;
+
+linkE.addEventListener("click", function() {
+    if (rickRolled == false) {
+        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ");
+        text.style.display = "block";
+        rickRolled = true;
+    } else {
+        window.open("https://www.instagram.com/serwin.dev/");
+    }
+});
+
+var dontHeader = document.querySelector("#dontheader");
+var text1 = document.querySelector(".text-");
+
+dontHeader.addEventListener("click", function() {
+    text1.style.display = "block";
+});

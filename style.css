@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://i.pinimg.com/736x/b8/41/57/b84157cda03e96cfa745e2eb11c92188.jpg");
+    background-image: url("https://w0.peakpx.com/wallpaper/290/654/HD-wallpaper-american-eagle-outfitters-logo-gray-creative-background-american-eagle-outfitters-emblem-gray-paper-texture-american-eagle-outfitters-gray-background-american-eagle-outfitters-3d-logo-thumbnail.jpg");
     background-size: cover;
 }
 
@@ -7,16 +7,133 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(10px);
+    color: aliceblue;
 }
 
-#about {
+#about, .window {
     border: solid;
-    width: 200px;
-    padding: 20px;
+    width: 300px;
 
     position: absolute;
     top: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
+
+    background-color: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(2px);
+
+    display: none;
+}
+
+#aboutheader, .header {
+    cursor: move;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 2px black;
+    height: 30px;
+    align-items: center;
+    color: aliceblue;
+}
+.header .icon {
+    width: 10px;
+    height: 10px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    border: solid 1px rgba(0, 0, 0, 1);
+    margin-top: 18px;
+}
+
+.header #close, #close-i, #close-n, #close-p, #close-d {
+    cursor: pointer;
+}
+
+#content-about, .content {
+    margin: 20px;
+    color: aliceblue;
+}
+
+#content-about p, #content-info p {
+    font-size: 20px;
+}
+
+#info {
+    width: 500px;
+}
+
+#notes {
+    width: 400px;
+    height: 400px;
+}
+
+#notesheader .icon {
+    background-color: blueviolet;
+}
+
+#infoheader .icon {
+    background-color: bisque;
+}
+
+.bottom-bar {
+    display: flex;
+    position: absolute;
+    left: 5%;
+    bottom: 10px;
+    width: 90%;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.bottom-bar .app-1 {
+    height: 30px;
+    width: 30px;
+    background-color: aquamarine;
+    margin: 5px 5px;
+    cursor: pointer;
+    border: solid 4px aliceblue;
+    border-radius: 10px;
+}
+
+.bottom-bar .app-2 {
+    height: 30px;
+    width: 30px;
+    background-color: bisque;
+    margin: 5px 5px;
+    cursor: pointer;
+    border: solid 4px aliceblue;
+    border-radius: 10px;
+}
+
+.bottom-bar .app-3 {
+    height: 30px;
+    width: 30px;
+    background-color: blueviolet;
+    margin: 5px 5px;
+    cursor: pointer;
+    border: solid 4px aliceblue;
+    border-radius: 10px;
+}
+
+.notes--row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.notes-1 .icon-n, .notes-2 .icon-n1 {
+    height: 80px;
+    width: 80px;
+    background-color: blanchedalmond;
+}
+
+.link {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
 }
